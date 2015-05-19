@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1377179907588
+Build-Jdk: 1.6.0_51
+Built-By: JSDowning
+Bundle-ManifestVersion: 2
+Bundle-Name: greeter-bundle
+Bundle-SymbolicName: greeter-bundle
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.bhn.training.api;version="1.0.0.SNAPSHOT"
+Import-Package: org.bhn.training.api;version="[1.0,2)"
+Originally-Created-By: Apache Maven Bundle Plugin
+Service-Component: OSGI-INF/greetercomponent.xml
+Tool: Bnd-1.50.0

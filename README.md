@@ -1,4 +1,4 @@
-greeter-bundle-lab4
+greeter-bundle-lab5
 ===================
 
 This lab is the final product of the tutorial Apache Felix - Modifying Our First Bundle For Declarative Services
