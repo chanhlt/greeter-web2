@@ -1,6 +1,4 @@
 greeter-bundle-lab5
 ===================
 
-This lab is the final product of the tutorial Apache Felix - Modifying Our First Bundle For Declarative Services
-
-It's not meant to be forked or added to, its just so that future tutorials have a starting point and won't need to work from the ground up.
+This is the finished lab for pax-exam integration into a codeaffectionado.com tutorial. The default branch right now only works with Java 1.7, a newer branch will have the Java 1.8 update.
