@@ -2,21 +2,23 @@ package org.bhn.training;
 
 import org.bhn.training.api.Greeter;
 import org.junit.Test;
+
 import junit.framework.TestCase;
+
 import org.junit.runner.RunWith;
+import org.ops4j.pax.exam.Configuration;
 import org.ops4j.pax.exam.Option;
-import org.ops4j.pax.exam.junit.Configuration;
-import org.ops4j.pax.exam.junit.ExamReactorStrategy;
-import org.ops4j.pax.exam.junit.JUnit4TestRunner;
-import org.ops4j.pax.exam.spi.reactors.AllConfinedStagedReactorFactory;
+import org.ops4j.pax.exam.junit.PaxExam;
+import org.ops4j.pax.exam.spi.reactors.ExamReactorStrategy;
+import org.ops4j.pax.exam.spi.reactors.PerClass;
 
 import javax.inject.Inject;
 
 import static org.ops4j.pax.exam.CoreOptions.*;
 
-@RunWith(JUnit4TestRunner.class)
-@ExamReactorStrategy(AllConfinedStagedReactorFactory.class)
-public class GreeterPaxExamTest
+@RunWith(PaxExam.class)
+@ExamReactorStrategy(PerClass.class)
+public class GreeterPaxExamIT
     extends TestCase
 {
     @Inject
@@ -27,7 +29,8 @@ public class GreeterPaxExamTest
         return options(
                 mavenBundle("org.apache.felix","org.apache.felix.scr","1.6.2"),
                 //mavenBundle("org.bhn.training","greeter-bundle"),
-                bundle("reference:file:target/classes"),
+//                bundle("reference:file:target/classes"),
+                bundle("reference:file:target/greeter-bundle-1.0-SNAPSHOT.jar"),
                 junitBundles()
         );
     }
