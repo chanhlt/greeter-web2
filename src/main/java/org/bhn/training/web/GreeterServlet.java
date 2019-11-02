@@ -1,4 +1,4 @@
-package org.bhn.training;
+package org.bhn.training.web;
 
 import java.io.IOException;
 
@@ -14,10 +14,10 @@ import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.bhn.training.api.Greeter;
 
-@Component(name = "Greeter Servlet", immediate = true)
+@Component(name = "Greeter Web2", immediate = true)
 @Service(value = javax.servlet.Servlet.class)
-@Properties({ @Property(name = "servlet-name", value = "Greeter Servlet"),
-		@Property(name = "alias", value = "/greeter") })
+@Properties({ @Property(name = "servlet-name", value = "Greeter Web2"),
+		@Property(name = "alias", value = "/greeter-web2") })
 public class GreeterServlet extends HttpServlet {
 	/**
 	 * 
